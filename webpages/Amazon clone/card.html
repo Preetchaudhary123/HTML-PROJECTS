@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .product-card {
+            width: 320px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            background-color: #e0e0e0;
+            /* Matches the grey background in the image */
+            position: relative;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 90%;
+            object-fit: contain;
+        }
+
+        .heart-icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 14px;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .brand {
+            color: #c99c56;
+            /* Matches the golden-brown text color */
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .price-tag {
+            background: black;
+            color: white;
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            font-size: 0.85rem;
+            color: #333;
+            line-height: 1.4;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <article id="container">
+        <div class="product-card">
+            <div class="image-container">
+                <span class="heart-icon">❤️</span>
+                <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/5/3/5324c8eNike-IF0514-002_1.jpg?rnd=20200526195200&tr=w-1536" alt="Nike Vomero 18 Shoes">
+            </div>
+            <div class="product-info">
+                <h2 class="brand">NIKE SHOES</h2>
+                <div class="price-tag">$41.00 USD</div>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sit facilis, unde ea impedit rem esse
+                    corrupti minima quaerat voluptate sunt.
+                </p>
+            </div>
+        </div>
+
+    </article>
+
+</body>
+</html>

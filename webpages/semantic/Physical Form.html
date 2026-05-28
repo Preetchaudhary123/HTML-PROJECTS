@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in html.</title>
+    <style>
+        input {
+            border: none;
+            border-bottom: 1px solid;
+            outline: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Hwo to use Form in html.</h2>
+    <form action="submit.html" method="get">
+        <fieldset>
+            <legend>Athlete Information</legend>
+            <ul>
+                <li>
+                    <label for="name">Name:</label><input type="text" id="name" placeholder="Enter name" required>
+                </li>
+                <li>
+                    <label for="stm">School/Team:</label><input type="text" id="stm"
+                        placeholder="Enter your school name" value="Parul Uninversity" readonly>
+                </li>
+                <li>
+                    <label for="sport">Sport:</label><input type="text" id="sport" placeholder="Enter sport name"
+                        required>
+                </li>
+                <li>
+                    <label for="parent">Parent/Gaurdian: </label><input type="text" id="parent"
+                        placeholder="Father/Mother's name" required>
+                </li>
+                <li>
+                    <label for="contact">Contact:</label><input type="text" id="contact" placeholder="Contact number"
+                        required>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Medical Information</legend>
+            <ul>
+                <li> History of Concussions
+                    <input type="radio" name="concussions" id="concussions" value="concussions">
+                    <label for="concussions">Yes</label>
+                    <input type="radio" name="concussions" id="concussion" value="concussion">
+                    <label for="concussion">No</label>
+                </li>
+                <li>
+                    <label for="psur">Previous surgeries: </label><input type="text" id="psur" required>
+                </li>
+                <li> Any bone fractures?
+                    <input type="radio" name="bones" id="bones" value="bones">
+                    <label for="bones">Yes</label>
+                    <input type="radio" name="bones" id="bone1" value="bone1">
+                    <label for="bone1">No</label>
+                </li>
+                <li> Astthama or Breathing problems?
+                    <input type="radio" name="breaths" id="breaths" value="breaths">
+                    <label for="breaths">Yes</label>
+                    <input type="radio" name="breaths" id="breath" value="breath">
+                    <label for="breath">No</label>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Date/Time</legend>
+            <ul>
+                <li>
+                    <label for="dob">DOB</label>
+                    <input type="date" name="dob" id="dob" required>
+                </li>
+                <li>
+                    <label for="time">Time</label>
+                    <input type="time" name="time" id="time" required>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Textarea</legend>
+            <ul>
+                <li>
+                    <label for="ops">
+                        <p>Summary of operations:</p>
+                    </label>
+                    <textarea name="ops" id="ops" value="ops" rows="5" cols="25"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>File Input</legend>
+            <label for="proof">Medical Proof:</label>
+            <input type="file" name="proof" id="proof" value="proof" accept=".pdf">
+        </fieldset>
+        <fieldset>
+            <legend>Checkbox/Select/Number</legend>
+            <ul>
+                <li>
+                    <input type="checkbox" name="check" id="check" value="yes-check" required>
+                    <label for="check"> You have read the terms and conditions.</label>
+                </li>
+                <li>
+                    <label for="states">Select your state: </label>
+                    <select name="states" id="states">
+                        <option value="null">Select your state.</option>
+                        <option value="gujarat">Gujarat</option>
+                        <option value="rajasthan">Rajasthan</option>
+                        <option value="haryana">Haryana</option>
+                        <option value="punjab">Punjab</option>
+                        <option value="himachal">Himachal</option>
+                        <option value="kerala">Kerala</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="sound">Sound</label>
+                    <input type="range" name="sound" id="sound" min="0" max="100">
+                </li>
+            </ul>
+        </fieldset>
+        <table>
+            <tr>
+                <th>Emp No.</th>
+                <th>Emp Salary</th>
+                <th>Emp name</th>
+                <th>Department</th>
+            </tr>
+            <tr>
+                <td>10986</td>
+                <td>10L + Bonus</td>
+                <td>Kir</td>
+                <td>HR</td>
+            </tr>
+            <tr>
+                <td>10987</td>
+                <td>10L + Bonus</td>
+                <td>Ker</td>
+                <td>Backend dev</td>
+            </tr>
+            <tr>
+                <td>10988</td>
+                <td>10L + Bonus</td>
+                <td>Kar</td>
+                <td>front-end dev</td>
+            </tr>
+        </table>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </form>
+
+</body>
+
+</html>
